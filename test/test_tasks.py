@@ -17,6 +17,10 @@ def test_calculate_bust_probability():
 
 # Sub-task 2
 def test_create_csv_reader_invalid_path():
+
+    with pytest.raises(IOError):
+        create_csv_reader("non_existent_config.csv")
+
     pass
 
 # Sub-task 3
