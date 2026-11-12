@@ -55,6 +55,10 @@ def test_display_player_console_output(capsys):
 
 # Sub-task 5
 def test_create_csv_reader_valid_data(tmp_path):
+    create_csv_reader()
+    p.write_text(""" """)
+    assert p.read_text() == """ """
+
     pass
 """
 python -m pytest test/ -v
